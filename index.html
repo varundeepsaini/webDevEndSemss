@@ -1,10 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scaler Social</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="body">
+    <div id="navbar" class="sticky content navbarr white">
+    <a>
+        <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/033/original/SST_Logo.png?1706888781" alt="Scaler School Of Technology" id="logo">
+    </a>
+    <a>
+        <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/032/original/scaler-social.png?1706888764" alt="Scaler Social" id="twt">
+    </a>
+    </div>
 
+    <div id="app_container">
+        <div id="app_twt_create">
+            <div id="tweet">
+                <div>
+                    <h2>Post your thoughts here</h2>
+                    <div id="post">
+                        <div id="upperHalf">
+                            <div>
+                                <a>
+                                    <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739" alt="profile" id="pic">
+                                </a>
+                            </div>
+                            <div contenteditable="true" class="tweet_text">
+                            </div>
+                        </div>
+                        <div id="lowerHalf">
+                            <div class="char">
+                                <h4 id="char_count">
+                                       0/100
+                                </h4>
+                            </div>
+                            <div class="butt">
+                            <button class="button-18" role="button">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="app_twt_post">
+                <div class="TweetPost">
+                    <div>
+                        <a>
+                            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739" alt="profile" id="pic">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="topp">
+                            <div class="name">
+                                <h4>Username</h4>
+                            </div>
+                            <div class="functions">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Tweet content goes here.</p>
+                        </div>
+                        <div class="comment-section">
+                            <label>
+                                <textarea placeholder="Add a comment..."></textarea>
+                            </label>
+                            <button class="button-18" role="button">Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div>
+</div>
 </body>
+<script src="script.js"></script>
 </html>
