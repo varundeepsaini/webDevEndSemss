@@ -1,238 +1,103 @@
-#navbar {
-    overflow: hidden;
-    background-color: white;
-    border-bottom: solid 1px gray;
-}
-
-#body{
-    height: 100%;
-    overflow-y: hidden;
-}
-
-#navbar a {
-    float: left;
-    display: flex;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    justify-content: space-between;
-}
-.white{
-    color: aqua;
-}
-
-#post{
-    border: solid 1px black;
-    border-radius: 2%;
-    width: 500px;
-}
-
-#tweet{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.butt{
-    padding-right: 5%;
-}
-
-.button-18 {
-   align-items: center;
-   background-color: #0A66C2;
-   border: 0;
-   border-radius: 100px;
-   box-sizing: border-box;
-   color: #ffffff;
-   cursor: pointer;
-   display: inline-flex;
-   font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-   font-size: 16px;
-   font-weight: 600;
-   justify-content: center;
-   line-height: 20px;
-   max-width: 480px;
-   min-height: 40px;
-   min-width: 0;
-   overflow: hidden;
-   text-align: center;
-   touch-action: manipulation;
-   transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-   user-select: none;
-   -webkit-user-select: none;
-   vertical-align: middle;
-    padding: 0 20px;
-}
-
-.button-18:hover,
-.button-18:focus {
-    background-color: #16437E;
-    color: #ffffff;
-}
-
-.button-18:active {
-    background: #09223b;
-    color: rgb(255, 255, 255, .7);
-}
-
-.button-18:disabled {
-    cursor: not-allowed;
-    background: rgba(0, 0, 0, .08);
-    color: rgba(0, 0, 0, .3);
-}
-
-#lowerHalf{
-    padding-top: 25px;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5%;
-}
-
-.post{
-    padding-right: 225px;
-}
-.char{
-    padding-left: 50px;
-}
-#upperHalf{
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-    gap: 10px;
-    display: flex;
-    height: 240px;
-}
-
-.TweetPost{
-    border : solid 1px gray;
-    display: flex;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-left: 10px;
-}
-
-.TweetPost .comments {
-    margin: 10px 0;
-}
-
-.TweetPost .comments .comment {
-    margin-left: 10px;
-    padding: 10px;
-    border: solid 1px gray;
-    border-radius: 2%;
-    width: 460px;
-    margin-bottom: 5px;
-}
-
-.TweetPost .comments .comment p {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 10px;
+    background-color: #f4f4f4;
 }
 
-.topp{
-    display: flex;
-    justify-content: space-between;
+#postForm {
+    margin-bottom: 20px;
 }
 
-.name{
-    display: flex;
-}
-
-.functions{
-    display: flex;
-}
-
-
-.tweet_text{
-    width: 75%;
-    flex: 1 1 auto;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-
-}
-
-
-#app_container{
-    display: flex;
-    /*padding-top: 80px;*/
-    justify-content: space-between;
-    flex-basis: 50%;
-}
-.gradient {
-    background: #ADA996;
-    background: linear-gradient(
-            to right,
-            #ADA996,#F2F2F2,#DBDBDB,#EAEAEA
-    );
-}
-
-#app_twt_create{
-    height: 100vh;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(218, 218, 218, 0.65);
-}
-
-#app_twt_post{
-    padding-top: 100px;
-    width: 50%;
-}
-
-.content {
-    padding: 16px;
-}
-#twt{
-    padding-right: 50px;
-}
-
-.navbarr{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
+#postForm textarea {
     width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#postForm button {
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.liked {
+    color: blue;
 }
 
 
-.theme-custom {
-    /* Name: Mercury color palette
-       Author: Ilias Ism
-       URL: https://gradient.page */
+.post .actions {
+    margin-top: 20px;
+}
 
-    /* CSS: .bg-gradient { background: var(--gradient) } */
-    --gradient: #EAEAEA;
+.fa {
+    margin-right: 5px;
+}
 
-    --background: 0 0% 7.36%;
-    --foreground: 0 0% 99.6%;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 10px;
+}
 
-    --muted: 0 0% 27.6%;
-    --muted-foreground: 0 0% 59.2%;
+#postForm, .post, .comment {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    --popover: 0 65% 11.96%;
-    --popover-foreground: 0 0% 99.6%;
+#postForm textarea, .comment-input, .nested-comment-input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
-    --card: 0 65% 11.96%;
-    --card-foreground: 0 0% 99.6%;
+#postForm button, .post button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-    --border: 0 0% 27.6%;
-    --input: 0 0% 27.6%;
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    --primary: 0 0% 92%;
-    --primary-foreground: 0 0% 9.200000000000001%;
+.comment {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-left: 3px solid #007bff;
+}
 
-    --secondary: 0 0% 27.6%;
-    --secondary-foreground: 0 0% 99.6%;
+.nested-comments {
+    margin-left: 20px;
+    margin-top: 20px;
+}
 
-    --accent: 0 0% 27.6%;
-    --accent-foreground: 0 0% 99.6%;
+.actions span {
+    cursor: pointer;
+    margin-right: 15px;
+}
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 99.6%;
-
-    --ring: 0 0% 92%;
+.liked {
+    color: #007bff;
 }
